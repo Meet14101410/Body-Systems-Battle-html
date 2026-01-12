@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Body Systems Battle</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+
+  <h1>🫀 Body Systems Battle</h1>
+  <p>Choose the correct body system!</p>
+
+  <h2 id="question">Which system pumps blood?</h2>
+
+  <button onclick="check('Circulatory')">Circulatory</button>
+  <button onclick="check('Nervous')">Nervous</button>
+  <button onclick="check('Respiratory')">Respiratory</button>
+
+  <p id="result"></p>
+
+  <script>
+    function check(answer) {
+      document.getElementById("result").innerText =
+        answer === "Circulatory" ? "✅ Correct!" : "❌ Try Again!";
+    }
+  </script>
+
+</body>
+</html>
