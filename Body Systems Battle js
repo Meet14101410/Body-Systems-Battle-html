@@ -1,0 +1,5 @@
+function check(answer) {
+  const result = document.getElementById("result");
+  result.textContent =
+    answer === "Circulatory" ? "✅ Correct!" : "❌ Try Again!";
+}
